@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row mt-5">        
+        <div class="col-md-9">
+        
+            <canvas #canvas id="canvas" style="height: 100%; width: 100%;" ></canvas>
+            SPEED {{initial_value}}
+               <div class="form-group text-center">
+                <app-controls (increament)="onIncrement($event)" (decrement)="onDecrement($event)" [decreseespeed]="initial_value"  ></app-controls>
+               
+                    <button (click)="OnStart()" class="btn btn-primary"style="margin:10px;">{{isLabel}}</button>
+                    <button (click)="onRest()" class="btn btn-primary"style="margin:10px;">Reset</button>
+                 
+                </div>
+               
+        </div>
+    </div>
+</div>

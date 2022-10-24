@@ -1,0 +1,19 @@
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-4 ">
+            <div class="form-group">
+                <button (click)="OnStart()" class="btn btn-primary btn-block">{{isLabel}}</button>
+
+            </div>
+            <div>
+                <button (click)="onRest()" class="btn btn-primary btn-block">Reset</button>
+            </div>
+
+        </div>
+        <div class="col-md-8">
+
+            <canvas #canvas id="canvas" style="height: 100%; width: 100%;" ></canvas>
+        </div>
+    </div>
+</div>
